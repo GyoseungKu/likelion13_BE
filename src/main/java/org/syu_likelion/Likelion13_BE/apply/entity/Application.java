@@ -284,6 +284,6 @@ public class Application {
     }
 
     public enum Track {
-        BACKEND, FRONTEND, PRODUCT_DESIGN
+        BACKEND, FRONTEND, PLAN_DESIGN
     }
 }
