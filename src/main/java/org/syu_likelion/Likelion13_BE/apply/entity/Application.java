@@ -16,11 +16,11 @@ public class Application {
     private String name;
 
     // 학번
-    @Column(nullable = false, length = 20, unique = true)
+    @Column(name = "student_num", nullable = false, length = 20, unique = true)
     private String studentNum;
 
     // 전화번호
-    @Column(nullable = false, length = 20)
+    @Column(name = "phone_num", nullable = false, length = 20)
     private String phoneNum;
 
     // 이메일
@@ -41,27 +41,54 @@ public class Application {
     private Track track;
 
     // 백엔드 질문
+    @Column(name = "be_q1")
     private String beQ1;
+
+    @Column(name = "be_q2")
     private String beQ2;
+
+    @Column(name = "be_q3")
     private String beQ3;
+
+    @Column(name = "be_q4")
     private String beQ4;
+
+    @Column(name = "be_q5")
     private String beQ5;
 
     // 프론트 질문
+    @Column(name = "fe_q1")
     private String feQ1;
+
+    @Column(name = "fe_q2")
     private String feQ2;
+
+    @Column(name = "fe_q3")
     private String feQ3;
+
+    @Column(name = "fe_q4")
     private String feQ4;
+
+    @Column(name = "fe_q5")
     private String feQ5;
 
     // 기디 질문
+    @Column(name = "pd_q1")
     private String pdQ1;
+
+    @Column(name = "pd_q2")
     private String pdQ2;
+
+    @Column(name = "pd_q3")
     private String pdQ3;
+
+    @Column(name = "pd_q4")
     private String pdQ4;
+
+    @Column(name = "pd_q5")
     private String pdQ5;
 
-    @Column(nullable = false, updatable = false, insertable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+    @Column(name = "created_at", nullable = false, updatable = false, insertable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private Timestamp createdAt;
 
     public int getId() {
