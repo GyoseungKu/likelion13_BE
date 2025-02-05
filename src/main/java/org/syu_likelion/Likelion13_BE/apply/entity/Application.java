@@ -40,6 +40,10 @@ public class Application {
     @Column(nullable = false)
     private Track track;
 
+    // 트랙 지원 동기
+    @Column(name = "track_q")
+    private String trackQ;
+
     // 백엔드 질문
     @Column(name = "be_q1")
     private String beQ1;
@@ -153,6 +157,14 @@ public class Application {
 
     public void setTrack(Track track) {
         this.track = track;
+    }
+
+    public String getTrackQ() {
+        return trackQ;
+    }
+
+    public void setTrack_q(String sessionQ) {
+        this.trackQ = trackQ;
     }
 
     public String getBeQ1() {
