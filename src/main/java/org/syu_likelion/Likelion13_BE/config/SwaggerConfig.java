@@ -19,8 +19,8 @@ public class SwaggerConfig {
                         .version("1.0")
                         .description("SYU-LIKELION 13th API"))
                 .servers(List.of(
-                        new Server().url("https://syu-likelion.org").description("Server")
-                        //new Server().url("http://localhost:8080").description("Local")
+                        new Server().url("https://syu-likelion.org").description("Server"),
+                        new Server().url("http://127.0.0.1:8080").description("Local")
                 ));
     }
 }

@@ -163,7 +163,7 @@ public class Application {
         return trackQ;
     }
 
-    public void setTrack_q(String sessionQ) {
+    public void setTrack_q(String trackQ) {
         this.trackQ = trackQ;
     }
 
