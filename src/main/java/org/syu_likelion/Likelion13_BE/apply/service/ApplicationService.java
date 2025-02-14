@@ -48,9 +48,11 @@ public class ApplicationService {
                 + "트랙별 질문 1: " + application.getQ2() + "\n"
                 + "트랙별 질문 2: " + application.getQ3() + "\n"
                 + "트랙별 질문 3: " + application.getQ4() + "\n"
-                + "포트폴리오 첨부: " + application.getQ5() + "\n"
-                + "\n"
-                + "지원해주셔서 감사합니다.";
-        emailService.sendEmail(to, subject, text);
+                + "포트폴리오 첨부: " + application.getQ5() + "\n\n"
+                + "지원해주셔서 감사합니다. \n\n"
+                + "본 메일은 발신 전용 메일입니다.\n"
+                + "문의: 카카오톡 채널 '멋쟁이사자처럼 삼육대학교', 인스타그램 @likelion_syu, 참조된 이메일";
+        String[] cc = {"sahmyook.univ@likelion.org", "ku@gyoseung.me"};
+        emailService.sendEmail(to, subject, text, cc);
     }
 }

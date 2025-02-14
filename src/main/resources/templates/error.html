@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERROR</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .logo {
+            position: absolute;
+            top: 10vh;
+            left: 10vh;
+            width: 20vw;
+            max-width: 400px;
+            filter: brightness(0) invert(1);
+        }
+        .error-text {
+            font-size: 15vw;
+            font-weight: bold;
+            background: linear-gradient(to right, red, orange, yellow, green, blue);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .message {
+            margin-top: 2vh;
+            font-size: 2vw;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+<img src="/logo.png" alt="logo" class="logo">
+<div class="error-text">ERROR</div>
+<div class="message">오류가 발생하였습니다. 새로고침 후 다시 시도하세요.</div>
+<div class="message">오류가 계속되면 문의 바랍니다.</div>
+</body>
+</html>
