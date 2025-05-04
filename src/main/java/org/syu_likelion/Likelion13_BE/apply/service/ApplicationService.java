@@ -32,7 +32,7 @@ public class ApplicationService {
             case FRONTEND:
                 track = "프론트엔드";
                 break;
-            case PLAN_DESIGN:
+            case PRODUCT_DESIGN:
                 track = "기획/디자인";
                 break;
         }
